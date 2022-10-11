@@ -4,15 +4,15 @@ import Laskuri from './Laskuri';
 import Viesti from './Viesti';
 import Posts from './Posts';
 import CustomerList from './CustomerList';
-import Message from './Message'
+import Message from './Message';
 
 const App = () => {
 
 const [showLaskuri, setShowLaskuri] = useState(false)
 const [showPosts, setShowPosts] = useState(false)
-const [isPositive, setIsPositive] = useState(false)
 const [showMessage, setShowMessage] = useState(false)
 const [message, setMessage] = useState('')
+const [isPositive, setIsPositive] = useState(false)
 
 const huomio = () => {
   alert("Huomio!")

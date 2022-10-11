@@ -1,4 +1,3 @@
-
 import './App.css'
 
 const Message = ({ message, isPositive }) => {

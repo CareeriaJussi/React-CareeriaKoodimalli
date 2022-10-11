@@ -106,8 +106,8 @@ const handleSubmit = (event) => {
                     onChange={({ target }) => setNewFax(target.value)} />
             </div>
          
-         <input type='submit' className="nappi2" value='Save' />
-         <input type='button' className="nappi2" value='Back' onClick={() => setLisäystila(false)} />
+         <input type='submit' className="nappi2" value='save' />
+         <input type='button' className="nappi2" value='back' onClick={() => setLisäystila(false)} />
        </form>
 
     </div>

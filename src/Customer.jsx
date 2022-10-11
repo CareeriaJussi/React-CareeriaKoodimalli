@@ -1,5 +1,5 @@
-import './App.css';
-import React, {useState} from 'react';
+import './App.css'
+import React, {useState} from 'react'
 
 const Customer = ({customer}) => {
 
@@ -15,24 +15,24 @@ const [showDetails, setShowDetails] = useState(false)
         </h4>
 
        {showDetails && <div className="customerDetails">
-                <h3>{customer.companyName}</h3>
+                <h3 className='otsikko'>{customer.companyName}</h3>
                 <table>
                     <thead>
                         <tr>
-                            <th>Contact person</th>
-                            <th>Phone</th>
-                            <th>Address</th>
-                            <th>City</th>
-                            <th>Country</th>
+                            <th className='asiakas'>Contact person</th>
+                            <th className='asiakas'>Phone</th>
+                            <th className='asiakas'>Address</th>
+                            <th className='asiakas'>City</th>
+                            <th className='asiakas'>Country</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>{customer.contactName}</td>
-                            <td>{customer.phone}</td>
-                            <td>{customer.address}</td>
-                            <td>{customer.city}</td>
-                            <td>{customer.country}</td>
+                            <td className='asiakas'>{customer.contactName}</td>
+                            <td className='asiakas'>{customer.phone}</td>
+                            <td className='asiakas'>{customer.address}</td>
+                            <td className='asiakas'>{customer.city}</td>
+                            <td className='asiakas'>{customer.country}</td>
                         </tr>
                     </tbody>
                 </table></div>}
@@ -40,4 +40,4 @@ const [showDetails, setShowDetails] = useState(false)
   )
 }
 
-export default Customer;
+export default Customer
