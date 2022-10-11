@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import Laskuri from './Laskuri';
 import Viesti from './Viesti';
 import Posts from './Posts';
+import CustomerList from './CustomerList';
 
 const App = () => {
 
@@ -16,6 +17,8 @@ const huomio = () => {
   return (
     <div className="App">
       <h1>Hello from React!</h1>
+
+      <CustomerList />
 
       {showLaskuri && <Laskuri huomio = {huomio}/>}
       {showLaskuri && <button onClick={() => setShowLaskuri(!showLaskuri)}>Piilota laskuri</button>}

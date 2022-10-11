@@ -2,6 +2,27 @@
   text-align: center;
 }
 
+.posts {
+  margin: auto;
+  background-color: beige;
+  max-width: 70%;
+  border-radius: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: burlywood;
+  margin-bottom: 2%;
+}
+
+.customerDetails{
+  background-color: lightcyan;
+  border-style: solid;
+  width: 40%;
+  margin: auto;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  padding-left: 10%;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
