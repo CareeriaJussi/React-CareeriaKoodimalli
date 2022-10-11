@@ -13,14 +13,41 @@
   margin-bottom: 2%;
 }
 
+.inputKenttä {
+  border-color: burlywood;
+  background-color: lightgoldenrodyellow;
+  margin-bottom: 5px;
+}
+
 .customerDetails{
-  background-color: lightcyan;
+  background-color: lightgoldenrodyellow;
   border-style: solid;
   width: 40%;
   margin: auto;
   margin-bottom: 50px;
   border-radius: 30px;
   padding-left: 10%;
+}
+
+.nappi{
+  border-radius: 10px;
+  margin-left: 10px;
+  font-size: 26px;
+  background-color: lightgoldenrodyellow;
+  border-color: burlywood;
+  color: black;
+}
+
+.nappi2{
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 26px;
+  background-color: lightgoldenrodyellow;
+  border-color: burlywood;
+  color: black;
 }
 
 .App-logo {
