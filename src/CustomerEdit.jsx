@@ -44,7 +44,7 @@ const handleSubmit = (event) => {
         setShowMessage(false)
        }, 5000)
 
-       setLisäystila(false)
+       setMuokkaustila(false)
     }
 
       })

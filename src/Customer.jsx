@@ -2,7 +2,7 @@ import './App.css'
 import React, {useState} from 'react'
 import CustomerService from './services/Customer'
 
-const Customer = ({customer, setIsPositive, setMessage, setShowMessage, reload, reloadNow}) => {
+const Customer = ({customer, editCustomer, setIsPositive, setMessage, setShowMessage, reload, reloadNow}) => {
 
 const [showDetails, setShowDetails] = useState(false)
 
@@ -63,7 +63,7 @@ const deleteCustomer = (customer) => {
                 <h3 className='otsikko'>{customer.companyName}</h3>
 
                 <button onClick={() => deleteCustomer(customer)}>Delete</button>
-                <button>Edit</button>
+                <button onClick={() => editCustomer(customer)}>Edit</button>
                 <table>
                     <thead>
                         <tr>

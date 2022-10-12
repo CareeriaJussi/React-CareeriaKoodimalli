@@ -12,14 +12,20 @@ const CustomerList = ({setIsPositive, setShowMessage, setMessage}) => {
     const [lisäystila, setLisäystila] = useState(false)
     const [muokkaustila, setMuokkaustila] = useState(false)
     const [reload, reloadNow] = useState(false)
+    const [muokattavaCustomer, setMuokattavaCustomer] = useState(false)
      
     useEffect(() => {
       CustomerService.getAll()
       .then(data => {
         setCustomers(data)
     })
-    },[lisäystila, reload]
+    },[lisäystila, reload, muokkaustila]
     )
+
+    const editCustomer = (customer) => {
+       setMuokattavaCustomer(customer)
+       setMuokkaustila(true)
+    }
 
   return (
     <>
@@ -32,10 +38,16 @@ const CustomerList = ({setIsPositive, setShowMessage, setMessage}) => {
                 setIsPositive={setIsPositive} setMessage={setMessage} setShowMessage={setShowMessage}
                 />}
 
+                {muokkaustila && <CustomerEdit setMuokkaustila={setMuokkaustila} 
+                setIsPositive={setIsPositive} setMessage={setMessage} setShowMessage={setShowMessage}
+                muokattavaCustomer={muokattavaCustomer}
+                />}
+
       {
         showCustomers && customers && customers.map(c => (
             <Customer key = {c.customerId} customer={c} reloadNow={reloadNow} reload={reload}
             setIsPositive={setIsPositive} setMessage={setMessage} setShowMessage={setShowMessage}
+            editCustomer={editCustomer}
             />
           )
         )
