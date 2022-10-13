@@ -17,6 +17,10 @@
   margin-left: 15%;
 }
 
+#userTable {
+  margin: auto;
+}
+
 .otsikko {
 margin-right: 110px;
 }
