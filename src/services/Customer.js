@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "axios"
 
 const baseUrl = "https://localhost:5001/nw/customers"
 

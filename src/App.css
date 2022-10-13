@@ -21,6 +21,15 @@
 margin-right: 110px;
 }
 
+.cusButton {
+  border-radius: 10px;
+  margin-right: 105px;
+  font-size: 26px;
+  background-color: white;
+  border-color: burlywood;
+  color: black;
+}
+
 .asiakas {
   margin-right: 200px;
   margin-left: 200px;

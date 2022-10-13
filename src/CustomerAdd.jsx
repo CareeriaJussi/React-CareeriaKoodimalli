@@ -1,6 +1,6 @@
-import './App.css';
-import React, {useState} from 'react';
-import CustomerService from './services/Customer';
+import './App.css'
+import React, {useState} from 'react'
+import CustomerService from './services/Customer'
 
 const CustomerAdd = ({setLisäystila, setIsPositive, setMessage, setShowMessage}) => {
 

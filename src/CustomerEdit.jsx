@@ -1,6 +1,6 @@
-import './App.css';
-import React, {useState} from 'react';
-import CustomerService from './services/Customer';
+import './App.css'
+import React, {useState} from 'react'
+import CustomerService from './services/Customer'
 
 const CustomerEdit = ({setMuokkaustila, setIsPositive, setMessage, setShowMessage, muokattavaCustomer}) => {
 
@@ -69,7 +69,7 @@ const handleSubmit = (event) => {
                 <input type="text" value={newCustomerId} disabled/>
             </div>
             <div>
-                <input type="text" value={newCompanyName} className="inputKenttä" placeholder="Company name"
+                <input type="text" value={newCompanyName} className="inputKenttä" labe placeholder="Company name"
                     onChange={({ target }) => setNewCompanyName(target.value)} required />
             </div>
             <div>
